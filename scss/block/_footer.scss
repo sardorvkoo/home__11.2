@@ -1,0 +1,104 @@
+.footer{
+    width: 1440px;
+    height: 393px;
+    margin-top: 150px;
+    background-image: url('/image/background1.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #FAFAFA;
+    &__main{
+        width: 1110px;
+        height: 265px;
+        margin: 0 auto;
+        margin-top: 65px;
+        &__logos{
+            display: flex;
+            width: 100%;
+            height: 55px;
+            &__img{
+                margin-top: 10px;
+            }
+            &__logo{
+                display: flex;
+                justify-content: space-between;
+                width: 144px;
+                height: 24px;
+                margin-top: 10px;
+                margin-left: 850px;
+            }
+        }
+        &__boxes{
+            display: flex;
+            width: 1110px;
+            height: 159px;
+            margin-top: 85px;
+            &__list{
+                width: 255px;
+                height: 159px;
+                &__ites{
+                    padding-bottom: 15px;
+                    &__item1{
+                        font-family: 'Karla';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 15px;
+                        letter-spacing: 1.5px;
+                        color: #837D88;
+                    }
+                    &__item2{
+                        font-family: 'Karla';
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 15px;
+                        letter-spacing: 1.5px;
+                        margin-top: 15px;
+                        color: #2D2641;
+                    }
+                
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:375px) {
+    .footer{
+        width: 375px;
+        height: 910px;
+        &__main{
+            width: 327px;
+            height: 900px;
+            &__logos{
+                display: block;
+                width: 100%;
+                &__img{
+                    position: absolute;
+                    margin-top: 15px;
+                    margin-left: 110px;
+                }
+                &__logo{
+                    position: absolute;
+                    width: 144px;
+                    height: 24px;
+                    margin: 60px 0px 0px 95px;
+                }
+            }
+            &__boxes{
+                display: block;
+                width: 327px;
+                height: 694px;
+                &__list{
+                    text-align: center;
+                    margin-left: 40px;
+                    &__ites{
+                        padding-bottom: 5px;        
+                    }
+                }
+            }
+        }
+    }
+}
